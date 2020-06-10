@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Personal - Victor Cortés</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <section class="grid-container header-container">
+        <section class="profile">
+          <div class="profile__img-content">
+            <a class="profile__link" href="#/">
+              <img
+                class="profile__img"
+                src="assets/images/foto-perfil.jpg"
+                alt="Foto de perfil"
+              />
+            </a>
+          </div>
+          <div class="profile__info-content">
+            <h1 class="profile__name">Victor Hugo Cortés</h1>
+            <p class="profile__legend">
+              full-stack developer but I like the front-end better.
+            </p>
+          </div>
+        </section>
+
+        <section class="social-networks">
+          <a
+            class="social-networks__link"
+            href="https://github.com/corteshvictor"
+          >
+            <img
+              class="social-networks__img"
+              src="assets/icons/github.svg"
+              alt="Perfil de github"
+            />
+          </a>
+          <a
+            class="social-networks__link"
+            href="https://twitter.com/corteshvictor"
+          >
+            <img
+              class="social-networks__img"
+              src="assets/icons/twitter.svg"
+              alt="Perfil de twitter"
+            />
+          </a>
+          <a
+            class="social-networks__link"
+            href="https://www.youtube.com/victorhugocortesposada"
+          >
+            <img
+              class="social-networks__img"
+              src="assets/icons/youtube.svg"
+              alt="Perfil de youtube"
+            />
+          </a>
+          <a class="social-networks__link" href="https://dev.to/corteshvictor">
+            <img
+              class="social-networks__img"
+              src="assets/icons/dev.svg"
+              alt="Perfil de dev.to"
+            />
+          </a>
+        </section>
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#/inicio">Inicio</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#/sobremi">Sobre mí</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#/tutoriales">Tutoriales</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#/articulos">Artículos</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#/pasatiempos">Pasatiempos</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="grid-container">
+      <section id="root"></section>
+      <aside class="aside">
+        <section class="subscribe-container">
+          <div class="youtube-subscribe">
+            <script src="https://apis.google.com/js/platform.js"></script>
+
+            <div
+              class="g-ytsubscribe"
+              data-channelid="UCy0uLIrIWFbnXjCWPl9DTOg"
+              data-layout="default"
+              data-count="default"
+            ></div>
+          </div>
+          <div class="twitter-subscribe">
+            <a
+              href="https://twitter.com/corteshvictor?ref_src=twsrc%5Etfw"
+              class="twitter-follow-button"
+              data-show-count="false"
+              >Follow @corteshvictor</a
+            >
+
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </div>
+        </section>
+        <section class="external-videos">
+          <a
+            class="external-videos__link"
+            href="https://youtu.be/8M9PLG4SFrU"
+            target="_blank"
+          >
+            <img
+              class="external-videos__img"
+              src="assets/images/hybrids-full-logo.svg"
+              alt="Hablando sobre Hybrids"
+            />
+            <h4 class="external-videos__text">
+              Hablando un poco sobre Hybrids
+            </h4>
+          </a>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="grid-container footer-container">
+        <p class="footer-container__name">Victor Cortés (@corteshvictor)</p>
+        <section class="footer-container__social">
+          <a
+            class="footer-container__link"
+            href="https://github.com/corteshvictor"
+            >Gihub</a
+          >
+          <a
+            class="footer-container__link"
+            href="https://twitter.com/corteshvictor"
+            >Twitter</a
+          >
+          <a
+            class="footer-container__link"
+            href="https://www.youtube.com/victorhugocortesposada"
+            >Youtube</a
+          >
+        </section>
+      </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

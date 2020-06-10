@@ -1,0 +1,224 @@
+/*------------ GLOBAL STYLES ------------*/
+:root {
+  --header-bg-color: #e6e9ed;
+  --border-color: rgba(0, 111, 225, 0.3);
+  --footer-bg-color: #e6e9ed;
+  --text-color: #1b95e0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.grid-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.title-h1 {
+  margin-top: 0;
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+/*------------ HEADER STYLES ------------*/
+header {
+  width: 100%;
+  background-color: var(--header-bg-color);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+}
+
+.header-container {
+  height: 120px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.profile {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.profile--height {
+  height: 150px;
+}
+
+.profile__img-content {
+  margin-right: 10px;
+}
+
+.profile__img {
+  width: 60px;
+  border-radius: 50%; /*Verse como un circulo*/
+  border: 1px solid #ddd;
+  box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
+  /*H-offset. El desplazamiento horizontal de la sombra. Un valor positivo coloca la sombra en el lado derecho del cuadro, un valor negativo coloca la sombra en el lado izquierdo del cuadro
+  v-offset requerido. El desplazamiento vertical de la sombra. Un valor positivo pone la sombra debajo del cuadro, un valor negativo pone la sombra encima del cuadro
+  Desenfoque Opcional. El radio borroso. Cuanto mayor sea el número, más borrosa será la sombra*/
+  overflow: hidden; /*Las cosas que sobresalgan aparezcan*/
+  object-fit: cover; /*Para que la imagen siempe se quede en lo que ocupa nuestro componente y se refleje bien, no se extire demasiado*/
+}
+
+.profile__img--size {
+  width: 150px;
+}
+
+.profile__name,
+.profile__legend {
+  margin: 0;
+}
+
+.social-networks {
+  text-align: right;
+  align-self: center;
+}
+
+.social-networks__link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-networks__img {
+  width: 32px;
+  height: 32px;
+}
+
+.social-networks__img:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.main-nav {
+  align-self: center;
+}
+
+.main-nav__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-nav__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.main-nav__link:hover {
+  color: black;
+}
+
+/*------------ FOOTER STYLES ------------*/
+footer {
+  margin-top: 20px;
+  width: 100%;
+  background-color: var(--footer-bg-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-container {
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.footer-container__social {
+  justify-self: right;
+}
+
+.footer-container__link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer-container__link:hover {
+  color: black;
+}
+
+/*------------ MAIN STYLES ------------*/
+main {
+  min-height: calc(100vh - 210px);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/*--- aside ---*/
+.aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-container {
+  display: inline-flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.external-videos__link {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  padding-right: 5px;
+}
+
+.external-videos__link:hover {
+  color: black;
+  background-color: var(--header-bg-color);
+}
+
+.external-videos__img {
+  width: 180px;
+}
+
+/*--- root or apps ---*/
+.global-article {
+  margin-top: 20px;
+}
+
+.global-article__link {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.global-article__link:hover {
+  color: blue;
+  background-color: var(--header-bg-color);
+}
+
+.global-article__img {
+  margin-right: 10px;
+}
+
+.remove-pass-article iframe {
+  margin-top: 20px;
+}
+
+.articles-container__anchor-global {
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+.articles-container__anchor-global:hover {
+  color: blue;
+}
+
+.warning-container {
+  text-align: center;
+}
+
+.warning-container__img {
+  width: 300px;
+}
+
+.profile-info__img {
+  width: 110px;
+}
