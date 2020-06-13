@@ -13,7 +13,7 @@ const contentHome = `
                 class="profile-info__img" 
                 src="../../assets/images/web-developer.svg" 
             />
-            <h1 class="profile__name">Desarrollador Web</h1>
+            <h4 class="profile__name">Desarrollador Web</h4>
             <p class="profile__legend">
               Trabajo como full-stack developer pero me gusta y apasiona laborar como front-end.
             </p>

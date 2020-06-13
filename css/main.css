@@ -6,11 +6,6 @@
   --text-color: #1b95e0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
   display: inline;
@@ -19,14 +14,27 @@ a {
 }
 
 .grid-container {
-  max-width: 980px;
+  max-width: 1020px;
   margin: 0 auto;
 }
 
 .title-h1 {
   margin-top: 0;
-  font-size: 24px;
   color: var(--text-color);
+}
+
+.video-iframe {
+  width: 560px;
+  height: 315px;
+}
+
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 75px;
+  right: 20px;
+  display: none;
+  z-index: 1;
 }
 
 /*------------ HEADER STYLES ------------*/
@@ -72,6 +80,7 @@ header {
 
 .profile__img--size {
   width: 150px;
+  margin-right: 20px;
 }
 
 .profile__name,
