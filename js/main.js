@@ -8,3 +8,23 @@ window.addEventListener("hashchange", () => {
 document.querySelector(".menu-btn").addEventListener("click", () => {
   document.querySelector(".main-nav").classList.toggle("main-nav--show");
 });
+
+document.querySelector("#nav-home").addEventListener("click", () => {
+  document.querySelector(".main-nav").classList.toggle("main-nav--show");
+});
+
+document.querySelector("#nav-aboutme").addEventListener("click", () => {
+  document.querySelector(".main-nav").classList.toggle("main-nav--show");
+});
+
+document.querySelector("#nav-tutorials").addEventListener("click", () => {
+  document.querySelector(".main-nav").classList.toggle("main-nav--show");
+});
+
+document.querySelector("#nav-article").addEventListener("click", () => {
+  document.querySelector(".main-nav").classList.toggle("main-nav--show");
+});
+
+document.querySelector("#nav-hobbies").addEventListener("click", () => {
+  document.querySelector(".main-nav").classList.toggle("main-nav--show");
+});
