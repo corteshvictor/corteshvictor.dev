@@ -1,0 +1,40 @@
+.dark-mode {
+  --header-bg-color: #1a2634;
+  --footer-bg-color: #1a2634;
+  --anchor-color: rgba(241, 240, 240, 0.7);
+  --box-shadow-color: rgba(112, 106, 106, 0.2);
+  --link-color: white;
+  --article-link-color: white;
+  --main-nav-bg: #1a2634;
+  --bg-global: #0d1219;
+  --color-global: white;
+  --bg-img-dev: white;
+  transition: 0.3s ease all;
+}
+
+.light-mode {
+  --header-bg-color: #e6e9ed;
+  --footer-bg-color: #e6e9ed;
+  --anchor-color: rgba(0, 0, 0, 0.7);
+  --box-shadow-color: rgba(0, 0, 0, 0.2);
+  --link-color: black;
+  --article-link-color: blue;
+  --bg-global: white;
+  --color-global: black;
+  transition: 0.3s ease all;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --header-bg-color: #1a2634;
+    --footer-bg-color: #1a2634;
+    --anchor-color: rgba(241, 240, 240, 0.7);
+    --box-shadow-color: rgba(112, 106, 106, 0.2);
+    --link-color: white;
+    --article-link-color: white;
+    --main-nav-bg: #1a2634;
+    --bg-global: #0d1219;
+    --color-global: white;
+    --bg-img-dev: white;
+  }
+}

@@ -4,13 +4,27 @@
   --border-color: rgba(0, 111, 225, 0.3);
   --footer-bg-color: #e6e9ed;
   --text-color: #1b95e0;
+  --anchor-color: rgba(0, 0, 0, 0.7);
+  --box-shadow-color: rgba(0, 0, 0, 0.2);
+  --link-color: black;
+  --article-link-color: blue;
+  --bg-global: white;
+  --color-global: black;
+  --light-mode: url("../assets/icons/wb_sunny.svg") center/cover no-repeat;
+  --dark-mode: url("../assets/icons/nights_stay.svg") center/cover no-repeat;
+  --bg-img-dev: none;
+}
+
+body {
+  background: var(--bg-global);
+  color: var(--color-global);
 }
 
 a {
   text-decoration: none;
   display: inline;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--anchor-color);
 }
 
 .grid-container {
@@ -37,6 +51,34 @@ a {
   z-index: 1;
 }
 
+.switch {
+  justify-self: flex-end;
+}
+
+.switch__checkbox {
+  display: none;
+}
+
+.switch__label {
+  cursor: pointer;
+  display: block;
+  user-select: none;
+}
+
+.switch__label {
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+.switch__label--dark {
+  background: var(--dark-mode);
+}
+
+.switch__label--light {
+  background: var(--light-mode);
+}
+
 /*------------ HEADER STYLES ------------*/
 header {
   width: 100%;
@@ -60,6 +102,7 @@ header {
 
 .profile--height {
   height: 150px;
+  margin-bottom: 20px;
 }
 
 .profile__img-content {
@@ -68,14 +111,11 @@ header {
 
 .profile__img {
   width: 60px;
-  border-radius: 50%; /*Verse como un circulo*/
+  border-radius: 50%;
   border: 1px solid #ddd;
-  box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
-  /*H-offset. El desplazamiento horizontal de la sombra. Un valor positivo coloca la sombra en el lado derecho del cuadro, un valor negativo coloca la sombra en el lado izquierdo del cuadro
-  v-offset requerido. El desplazamiento vertical de la sombra. Un valor positivo pone la sombra debajo del cuadro, un valor negativo pone la sombra encima del cuadro
-  Desenfoque Opcional. El radio borroso. Cuanto mayor sea el número, más borrosa será la sombra*/
-  overflow: hidden; /*Las cosas que sobresalgan aparezcan*/
-  object-fit: cover; /*Para que la imagen siempe se quede en lo que ocupa nuestro componente y se refleje bien, no se extire demasiado*/
+  box-shadow: 0 10px 14px var(--box-shadow-color);
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .profile__img--size {
@@ -107,6 +147,10 @@ header {
   filter: alpha(opacity=60);
 }
 
+.social-networks__img--dev {
+  background-color: var(--bg-img-dev);
+}
+
 .main-nav {
   align-self: center;
 }
@@ -122,7 +166,7 @@ header {
 }
 
 .main-nav__link:hover {
-  color: black;
+  color: var(--link-color);
 }
 
 /*------------ FOOTER STYLES ------------*/
@@ -149,7 +193,7 @@ footer {
 }
 
 .footer-container__link:hover {
-  color: black;
+  color: var(--link-color);
 }
 
 /*------------ MAIN STYLES ------------*/
@@ -179,7 +223,7 @@ main {
 }
 
 .external-videos__link:hover {
-  color: black;
+  color: var(--link-color);
   background-color: var(--header-bg-color);
 }
 
@@ -199,7 +243,7 @@ main {
 }
 
 .global-article__link:hover {
-  color: blue;
+  color: var(--article-link-color);
   background-color: var(--header-bg-color);
 }
 
@@ -217,7 +261,7 @@ main {
 }
 
 .articles-container__anchor-global:hover {
-  color: blue;
+  color: var(--article-link-color);
 }
 
 .warning-container {

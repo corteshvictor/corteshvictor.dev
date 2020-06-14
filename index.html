@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media-queries.css" />
+    <link rel="stylesheet" href="css/dark-mode.css" />
   </head>
   <body>
     <div class="menu-btn">
@@ -65,7 +66,7 @@
           </a>
           <a class="social-networks__link" href="https://dev.to/corteshvictor">
             <img
-              class="social-networks__img"
+              class="social-networks__img social-networks__img--dev"
               src="assets/icons/dev.svg"
               alt="Perfil de dev.to"
             />
@@ -99,6 +100,16 @@
             </li>
           </ul>
         </nav>
+
+        <div class="switch">
+          <input
+            class="switch__checkbox"
+            type="checkbox"
+            name="dark-mode"
+            id="dark-mode"
+          />
+          <label class="switch__label" for="dark-mode"></label>
+        </div>
       </section>
     </header>
 
@@ -136,6 +147,7 @@
             class="external-videos__link"
             href="https://youtu.be/8M9PLG4SFrU"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               class="external-videos__img"
