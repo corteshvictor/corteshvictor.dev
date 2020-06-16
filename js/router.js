@@ -35,6 +35,9 @@ const router = (route = "") => {
     case "#/modern-combat":
       return content.appendChild(Home.modernCombat());
 
+    case "#/intro-hybrids":
+      return content.appendChild(Home.introHybrids());
+
     default:
       return content.appendChild(NotFound());
   }

@@ -14,7 +14,11 @@ const contentRemovePassword = `
   </ul>
   
 
-  <iframe class="video-iframe" src="https://www.youtube.com/embed/YqnggwQffrA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe 
+    class="video-iframe" 
+    src="https://www.youtube.com/embed/YqnggwQffrA" 
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  </iframe>
 </article>
 
 `;

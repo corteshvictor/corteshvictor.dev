@@ -2,6 +2,25 @@ const contentHome = `
 <h1 class="title-h1">¡Te doy la bienvenida! y gracias por la visita, espero que te guste el material compartido.</h1>
 <p>El objetivo del contenido es que encuentres videotutoriales sobre videojuegos, programación y desarrollo web con JavaScript: HTML5/CSS3, React.js, Node.js, Hybrids y otros.</p>
 <p>También encontrarás contenido de mis pasatiempos que pueden ser divertidos</p>
+
+<article class="global-article">
+    <a
+        class="global-article__link" 
+        href="#/intro-hybrids"
+    >
+        <img 
+            class="global-article__img" 
+            alt="Hybrids" width="120" src="https://i.ytimg.com/vi/CUQNJi4cB58/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAOe-lNYleAgrh2hRAb_BGvP3NcUA"
+        />
+        <p
+            class="global-article__text" 
+            title="Librería Hybrids - ¿qué es hybrids?"
+        >
+            Librería Hybrids - ¿qué es hybrids?
+        </p>
+    </a>
+</article>
+
 <article class="global-article">
     <a
         class="global-article__link" 

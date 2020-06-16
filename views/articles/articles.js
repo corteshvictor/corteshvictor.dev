@@ -9,7 +9,10 @@ const contentHome = `
         <a 
             class="articles-container__anchor-global" href="https://dev.to/corteshvictor" 
             target="_blank"
-        >https://dev.to/corteshvictor</a> 
+            rel="noopener noreferrer"
+        >
+            https://dev.to/corteshvictor
+        </a> 
         </strong> para mantenerte actualizado.
     </p>
 
@@ -22,6 +25,7 @@ const contentHome = `
             class="global-article__link" 
             href="https://dev.to/corteshvictor/introduccion-sobre-la-libreria-hybridsjs-ld2"
             target="_blank"
+            rel="noopener noreferrer"
         >
             <img 
                 class="global-article__img"

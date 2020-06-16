@@ -43,7 +43,11 @@ const contentRemovePassword = `
     Recovery", "Rixler Excel Password Recovery Master", "Excel Key".
   </p>
 
-  <iframe class="video-iframe" src="https://www.youtube.com/embed/XfDModFBCSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe 
+    class="video-iframe" 
+    src="https://www.youtube.com/embed/XfDModFBCSk" 
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  </iframe>
 </article>
 
 `;
