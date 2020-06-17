@@ -1,1 +1,13 @@
+title: Personal Blog
+description: >- # this means to ignore newlines until "baseurl:"
+  El objetivo del contenido es que encuentres videotutoriales sobre 
+  videojuegos, programación y desarrollo web con JavaScript: 
+  HTML5/CSS3, React.js, Node.js, Hybrids y otros.
+baseurl: ""
+url: https://corteshvictor.dev
+google_analytics: UA-169828482-1
+twitter_username: corteshvictor
+github_username: corteshvictor
 theme: jekyll-theme-slate
+plugins:
+  - jekyll-feed
