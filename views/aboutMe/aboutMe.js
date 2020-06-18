@@ -4,7 +4,7 @@ const contentHome = `
         <div class="profile__img-content">
             <img
                 class="profile__img profile__img--size"
-                src="../../assets/images/foto-perfil.jpg"
+                src="../../assets/images/profile-photo.jpg"
                 alt="Foto de perfil"
             />
         </div>

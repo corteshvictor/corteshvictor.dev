@@ -8,6 +8,6 @@ url: https://corteshvictor.dev
 google_analytics: UA-169828482-1
 twitter_username: corteshvictor
 github_username: corteshvictor
-theme: jekyll-theme-slate
+theme: minima
 plugins:
   - jekyll-feed
