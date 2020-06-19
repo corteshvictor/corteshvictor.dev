@@ -3,18 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Personal - Victor Cortés</title>
     <meta name="theme-color" content="#1a2735" />
     <meta name="description" content="Blog Personal corteshvictor" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="corteshvictor" />
+    <title>Blog Personal - Victor Cortés</title>
     <link rel="apple-touch-icon" href="assets/icons/icon-152x152.png" />
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/media-queries.css" />
-    <link rel="stylesheet" href="css/dark-mode.css" />
+    <link
+      rel="stylesheet"
+      media="(max-width: 1050px)"
+      href="css/media-queries.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme: dark)"
+      href="css/dark-mode.css"
+    />
+    <link
+      rel="preconnect dns-prefetch"
+      href="https://www.google-analytics.com"
+    />
+    <link rel="preconnect dns-prefetch" href="https://i3.ytimg.com" />
+    <link rel="preconnect dns-prefetch" href="https://accounts.google.com" />
+    <link rel="preconnect dns-prefetch" href="https://ssl.gstatic.com" />
+    <link rel="preconnect dns-prefetch" href="https://apis.google.com" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -39,7 +57,7 @@
             <a class="profile__link" href="#/">
               <img
                 class="profile__img"
-                src="assets/images/profile-photo.jpg"
+                src="assets/images/profile-photo.png"
                 alt="Foto de perfil"
               />
             </a>
@@ -151,9 +169,9 @@
               href="https://twitter.com/corteshvictor?ref_src=twsrc%5Etfw"
               class="twitter-follow-button"
               data-show-count="false"
-              >Follow @corteshvictor</a
             >
-
+              Follow @corteshvictor
+            </a>
             <script
               async
               src="https://platform.twitter.com/widgets.js"
@@ -213,7 +231,7 @@
       </div>
     </footer>
 
-    <script src="js/index.js"></script>
     <script type="module" src="js/main.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -43,7 +43,8 @@ const contentRemovePassword = `
     Recovery", "Rixler Excel Password Recovery Master", "Excel Key".
   </p>
 
-  <iframe 
+  <iframe
+    title="Remover contraseña archivos de excel" 
     class="video-iframe" 
     src="https://www.youtube.com/embed/XfDModFBCSk" 
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>

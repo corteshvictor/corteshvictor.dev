@@ -14,7 +14,8 @@ const contentRemovePassword = `
   </ul>
   
 
-  <iframe 
+  <iframe
+    title="Modern Combat 5 Abre los ojos Rescate" 
     class="video-iframe" 
     src="https://www.youtube.com/embed/YqnggwQffrA" 
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>

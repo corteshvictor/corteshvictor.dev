@@ -1,9 +1,9 @@
 {
   "short_name": "corteshvictor.dev",
-  "name": "corteshvictor",
+  "name": "Blog corteshvictor.dev",
   "lang": "es",
   "description": "Blog Personal corteshvictor",
-  "start_url": "https://corteshvictor.dev/",
+  "start_url": "/",
   "background_color": "#0f131a",
   "theme_color": "#1a2735",
   "dir": "ltr",
@@ -51,5 +51,5 @@
       "type": "image/png"
     }
   ],
-  "prefer_related_applications": "false"
+  "prefer_related_applications": false
 }
