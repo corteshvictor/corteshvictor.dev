@@ -4,7 +4,7 @@ const contentHome = `
     </h1>
 
     <p>
-        En este apartado encontraras artículos escritos por mi autoría que tratare de ir actualizando lo mas pronto posible. De igual forma, puedes seguirme en 
+        En este apartado encontrarás artículos escritos por mi autoría que tratare de ir actualizando lo mas pronto posible. De igual forma, puedes seguirme en 
         <strong>
         <a 
             class="articles-container__anchor-global" href="https://dev.to/corteshvictor" 

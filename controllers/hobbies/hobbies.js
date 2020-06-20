@@ -1,4 +1,4 @@
-import viewHobbies from "../../views/development.js";
+import viewHobbies from "../../views/hobbies/hobbies.js";
 
 const Hobbies = () => {
   const divElement = document.createElement("div");

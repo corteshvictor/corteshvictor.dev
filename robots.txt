@@ -1,3 +1,0 @@
-Sitemap: https://corteshvictor.dev/sitemap.xml
-User-agent: *
-Allow: /
