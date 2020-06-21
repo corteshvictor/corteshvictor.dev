@@ -1,4 +1,4 @@
-import tutorials from "../../views/development.js";
+import tutorials from "../../views/tutorials/tutorials.js";
 
 const Tutorials = () => {
   const divElement = document.createElement("div");

@@ -41,8 +41,8 @@ const contentIntroHybrids = `
           <td>
             <img
               alt="logo stencil"
-              src="https://s3.amazonaws.com/media-p.slid.es/uploads/249891/images/6369783/Screen_Shot_2019-07-18_at_6.59.32_AM.png"
               class="table--img"
+              id="img-stencil"
             />
           </td>
           <td>
