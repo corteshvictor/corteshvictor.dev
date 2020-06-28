@@ -1,5 +1,9 @@
 # Blog Personal
 
-### Construí mi blog personal con HTML, CSS y JavaScript.
+### Construí mi blog personal sencillo y clásico con HTML, CSS y JavaScript.
 
-javascript Vanilla Single Page Application
+- [x] JavaScript Vanilla.
+- [x] Single Page Application (SPA)
+- [x] Responsive Web Design
+- [x] Dark Mode
+- [x] Progressive Web Apps (PWA)
