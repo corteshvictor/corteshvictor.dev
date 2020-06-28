@@ -17,6 +17,7 @@
   --width-img: 80px;
   --padding-table: 10px;
   --topic-link-shadow: rgba(100, 110, 140, 0.4);
+  --profile-img-margin: 20px;
 }
 
 body {
@@ -110,8 +111,8 @@ header {
 }
 
 .profile--height {
-  height: 150px;
-  margin-bottom: 20px;
+  height: 100%;
+  margin: 1em 0;
 }
 
 .profile__img-content {
@@ -129,7 +130,7 @@ header {
 
 .profile__img--size {
   width: 150px;
-  margin-right: 20px;
+  margin-right: var(--profile-img-margin);
 }
 
 .profile__name,
@@ -176,6 +177,13 @@ header {
 
 .main-nav__link:hover {
   color: var(--link-color);
+}
+
+.main-nav__link--active {
+  border-bottom: 1px solid var(--link-color);
+  padding-bottom: 0.6em;
+  color: var(--link-color);
+  font-weight: bold;
 }
 
 /*------------ FOOTER STYLES ------------*/
@@ -230,6 +238,7 @@ main {
   border-radius: 4px;
   display: flex;
   padding-right: 5px;
+  justify-content: center;
 }
 
 .external-videos__link:hover {

@@ -74,12 +74,12 @@ const contentIntroHybrids = `
     Para mayor información puedes ver el video o leer mi artículo en el
     siguiente enlace:
     <a
-      class="table--link"
+      class="intro-hybrids-article--link"
       href="https://dev.to/corteshvictor/introduccion-sobre-la-libreria-hybridsjs-ld2"
       target="_blank"
       rel="noopener noreferrer"
     >
-      Hybrids
+      Introducción sobre la librería Hybrids
     </a>
   </p>
   <iframe
