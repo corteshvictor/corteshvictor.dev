@@ -28,7 +28,7 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 765px) {
   :root {
     --padding-table: 5px;
     --profile-img-margin: 10px;
