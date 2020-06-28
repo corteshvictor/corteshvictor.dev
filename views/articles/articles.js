@@ -17,7 +17,7 @@ const contentHome = `
     </p>
 
     <p>
-        Es pero que sean de su agrado estas publicaciones, y si deseas que escriba sobre algún tema especial, puedes escribirme por Twitter y trataré de escribir algo al respecto.
+        Espero que sean de su agrado estas publicaciones, y si deseas que escriba sobre algún tema especial, puedes escribirme por Twitter y trataré de escribir algo al respecto.
     </p>
 
     <article class="global-article">
@@ -27,10 +27,11 @@ const contentHome = `
             target="_blank"
             rel="noopener noreferrer"
         >
-            <img 
+            <img
+                id="img-hybrids" 
                 class="global-article__img"
-                alt="Introducción sobre la librería Hybrids" width="200" 
-                src="../../assets/images/hybrids-full-logo.svg"
+                alt="Introducción sobre la librería Hybrids"
+                width="200" 
             />
             <p
                 class="global-article__text" 

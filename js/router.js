@@ -8,6 +8,19 @@ import {
 } from "../controllers/index.js";
 
 let content = document.getElementById("root");
+let navHome = document.querySelector("#nav-home");
+let navAboutMe = document.querySelector("#nav-aboutme");
+let navTutorials = document.querySelector("#nav-tutorials");
+let navArticles = document.querySelector("#nav-articles");
+let navHobbies = document.querySelector("#nav-hobbies");
+
+function removeActive() {
+  navHome.classList.remove("main-nav__link--active");
+  navAboutMe.classList.remove("main-nav__link--active");
+  navTutorials.classList.remove("main-nav__link--active");
+  navArticles.classList.remove("main-nav__link--active");
+  navHobbies.classList.remove("main-nav__link--active");
+}
 
 const router = (route = "") => {
   content.innerHTML = "";
@@ -15,18 +28,28 @@ const router = (route = "") => {
     case "":
     case "#/":
     case "#/inicio":
+      removeActive();
+      navHome.classList.add("main-nav__link--active");
       return content.appendChild(Home.home());
 
     case "#/sobremi":
+      removeActive();
+      navAboutMe.classList.add("main-nav__link--active");
       return content.appendChild(AboutMe.aboutMe());
 
     case "#/tutoriales":
+      removeActive();
+      navTutorials.classList.add("main-nav__link--active");
       return content.appendChild(Tutorials.tutorials());
 
     case "#/articulos":
+      removeActive();
+      navArticles.classList.add("main-nav__link--active");
       return content.appendChild(Articles.articles());
 
     case "#/pasatiempos":
+      removeActive();
+      navHobbies.classList.add("main-nav__link--active");
       return content.appendChild(Hobbies.hobbies());
 
     case "#/quitar-password":
@@ -39,6 +62,7 @@ const router = (route = "") => {
       return content.appendChild(Home.introHybrids());
 
     default:
+      removeActive();
       return content.appendChild(NotFound());
   }
 };

@@ -14,10 +14,6 @@
 }
 
 @media (max-width: 860px) {
-  main {
-    gap: 20px;
-  }
-
   .grid-container {
     max-width: 760px;
     padding: 0 20px;
@@ -33,6 +29,11 @@
 }
 
 @media (max-width: 760px) {
+  :root {
+    --padding-table: 5px;
+    --profile-img-margin: 10px;
+  }
+
   main {
     grid-template-columns: 1fr;
   }
@@ -86,8 +87,8 @@
 @media (max-width: 500px) {
   :root {
     --main-nav-bg: #e6e9ed;
-    --padding-table: 5px;
     --width-img: 35px;
+    --profile-img-margin: 0;
   }
 
   .grid-container {
@@ -105,7 +106,7 @@
 
   .main-nav {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: var(--main-nav-bg);
@@ -117,6 +118,7 @@
 
   .main-nav--show {
     transform: none;
+    z-index: 1;
   }
 
   .main-nav__list {
@@ -125,7 +127,7 @@
   }
 
   .main-nav__item {
-    padding-top: 30px;
+    padding-top: 40px;
   }
 
   .menu-btn {
@@ -143,15 +145,5 @@
 
   .video-iframe {
     height: 200px;
-  }
-
-  .table,
-  th,
-  td {
-    padding: var(--padding-table);
-  }
-
-  .table--img {
-    width: var(--width-img);
   }
 }

@@ -62,7 +62,7 @@ document.querySelector("#nav-tutorials").addEventListener("click", () => {
   document.querySelector(".main-nav").classList.toggle("main-nav--show");
 });
 
-document.querySelector("#nav-article").addEventListener("click", () => {
+document.querySelector("#nav-articles").addEventListener("click", () => {
   document.querySelector(".main-nav").classList.toggle("main-nav--show");
 });
 
