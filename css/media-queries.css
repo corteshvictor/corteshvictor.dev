@@ -32,6 +32,7 @@
   :root {
     --padding-table: 5px;
     --profile-img-margin: 10px;
+    --link-nav-active-pb: 0.6em;
   }
 
   main {

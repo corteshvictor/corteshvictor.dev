@@ -18,6 +18,7 @@
   --padding-table: 10px;
   --topic-link-shadow: rgba(100, 110, 140, 0.4);
   --profile-img-margin: 20px;
+  --link-nav-active-pb: 0.4em;
 }
 
 body {
@@ -181,7 +182,7 @@ header {
 
 .main-nav__link--active {
   border-bottom: 1px solid var(--link-color);
-  padding-bottom: 0.6em;
+  padding-bottom: var(--link-nav-active-pb);
   color: var(--link-color);
   font-weight: bold;
 }
