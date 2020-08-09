@@ -1,4 +1,4 @@
-const CACHE_NAME = "corteshvictor-shell-v1.0.0";
+const CACHE_NAME = "shell-v1.0.0";
 const filesToCache = [
   "/",
   "./index.html",
