@@ -1,4 +1,4 @@
-## WebStie [https://corteshvictor.dev](https://corteshvictor.dev)
+## Website [https://corteshvictor.dev](https://corteshvictor.dev)
 
 # Blog Personal 📝
 
