@@ -24,7 +24,7 @@ const contentHome = `
 <article class="global-article">
     <a
         class="global-article__link" 
-        href="#/quitar-password"
+        href="#/remove-password"
     >
         <img 
             class="global-article__img"
