@@ -26,39 +26,73 @@ const router = (route = "") => {
   content.innerHTML = "";
   switch (route) {
     case "":
+    case "/":
     case "#/":
-    case "#/inicio":
+    case "#/home":
+    case "/index.html":
+      gtag("config", "UA-169828482-1", {
+        page_path: "/home",
+        page_title: "Inicio",
+      });
       removeActive();
       navHome.classList.add("main-nav__link--active");
       return content.appendChild(Home.home());
 
-    case "#/sobremi":
+    case "#/about":
+      gtag("config", "UA-169828482-1", {
+        page_path: "/about",
+        page_title: "Sobre mí",
+      });
       removeActive();
       navAboutMe.classList.add("main-nav__link--active");
       return content.appendChild(AboutMe.aboutMe());
 
-    case "#/tutoriales":
+    case "#/tutorials":
+      gtag("config", "UA-169828482-1", {
+        page_path: "/tutorials",
+        page_title: "Tutoriales",
+      });
       removeActive();
       navTutorials.classList.add("main-nav__link--active");
       return content.appendChild(Tutorials.tutorials());
 
-    case "#/articulos":
+    case "#/articles":
+      gtag("config", "UA-169828482-1", {
+        page_path: "/articles",
+        page_title: "Artículos",
+      });
       removeActive();
       navArticles.classList.add("main-nav__link--active");
       return content.appendChild(Articles.articles());
 
-    case "#/pasatiempos":
+    case "#/hobbies":
+      gtag("config", "UA-169828482-1", {
+        page_path: "/hobbies",
+        page_title: "Pasatiempos",
+      });
       removeActive();
       navHobbies.classList.add("main-nav__link--active");
       return content.appendChild(Hobbies.hobbies());
 
-    case "#/quitar-password":
+    case "#/remove-password":
+      gtag("config", "UA-169828482-1", {
+        page_path: "/remove-password",
+        page_title: "Remover contraseñas archivos de Excel",
+      });
       return content.appendChild(Home.removePass());
 
     case "#/modern-combat":
+      gtag("config", "UA-169828482-1", {
+        page_path: "/modern-combat",
+        page_title: "Tutorial MC5 - Abre los ojos 04 Rescate",
+      });
       return content.appendChild(Home.modernCombat());
 
     case "#/intro-hybrids":
+      gtag("config", "UA-169828482-1", {
+        page_path: "/intro-hybrids",
+        page_title: "Introducción sobre Hybrids",
+      });
       return content.appendChild(Home.introHybrids());
 
     default:
