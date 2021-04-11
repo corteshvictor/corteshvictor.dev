@@ -90,6 +90,49 @@ a {
   background: var(--light-mode);
 }
 
+.youtube-follow,
+.twitter-follow {
+  color: #fefefe;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.youtube-follow {
+  background: #e62117;
+  opacity: 0.7;
+}
+
+.twitter-follow {
+  background: #1b95e0;
+  opacity: 0.7;
+}
+
+.twitter-follow:hover,
+.youtube-follow:hover {
+  opacity: initial;
+}
+
+.youtube-follow__icon,
+.twitter-follow__icon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.youtube-follow__icon {
+  background: url("../assets/icons/yt-subscribe.svg") transparent 0 0 no-repeat;
+  margin: 0px 2px;
+}
+
+.twitter-follow__icon {
+  background: url("../assets/icons/twitter-white.svg") transparent 0 0 no-repeat;
+  margin: 0px 2px;
+}
+
 /*------------ HEADER STYLES ------------*/
 header {
   width: 100%;
