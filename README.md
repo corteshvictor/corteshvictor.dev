@@ -19,3 +19,5 @@
 - [x] Progressive Web Apps (PWA)
 - [x] Google Analytics
 - [ ] Translations to other languages? 🇱🇷
+
+Para ejecutar utilizar el comando (To execute use the command): `bundle exec jekyll serve`

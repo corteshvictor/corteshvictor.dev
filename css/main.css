@@ -92,39 +92,40 @@ a {
 
 .youtube-follow,
 .twitter-follow {
-  height: 20px;
   color: #fefefe;
   display: inline-flex;
   align-items: center;
   border-radius: 3px;
-  padding: 2px;
+  padding: 5px;
 }
 
 .youtube-follow {
   background: #e62117;
+  opacity: 0.7;
 }
 
 .twitter-follow {
   background: #1b95e0;
+  opacity: 0.7;
 }
 
 .twitter-follow:hover,
 .youtube-follow:hover {
-  background: none;
-  opacity: 0.7;
+  opacity: initial;
 }
 
 .youtube-follow__icon,
 .twitter-follow__icon {
   position: relative;
-  top: 2px;
+  top: 1px;
   display: inline-block;
-  width: 15px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 }
 
 .youtube-follow__icon {
   background: url("../assets/icons/yt-subscribe.svg") transparent 0 0 no-repeat;
+  margin: 0px 2px;
 }
 
 .twitter-follow__icon {
