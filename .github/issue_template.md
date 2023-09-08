@@ -13,7 +13,7 @@ labels: 'Status: Unconfirmed'
 -->
 
 
-## Steps To Reproduce
+## Steps to reproduce the behavior
 
 1.
 2.
