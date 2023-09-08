@@ -12,7 +12,6 @@ labels: 'Status: Unconfirmed'
   to make sure your issue has not already been fixed.
 -->
 
-React version:
 
 ## Steps To Reproduce
 
