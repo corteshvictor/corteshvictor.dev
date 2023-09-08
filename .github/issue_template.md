@@ -33,7 +33,7 @@ Link to code example:
   relevant to your bug report.
 -->
 
-## The current behavior
+## Current behavior
 
 
 ## Expected behavior
