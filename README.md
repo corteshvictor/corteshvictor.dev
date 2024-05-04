@@ -20,4 +20,12 @@
 - [x] Google Analytics
 - [ ] Translations to other languages? 🇱🇷
 
-Para ejecutar utilizar el comando (To execute use the command): `bundle exec jekyll serve`
+
+# Para ejecutar el proyecto.
+
+- Verifica la version de ruby que sea v3. `ruby -v`
+- Installar ruby en arm64. `brew install ruby`
+- Actualizar nuestro PATH. La forma más sencilla de hacerlo es seguir las instrucciones que nos da Homebrew: `echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc`
+- actualiza a la última versión de RubyGems: `sudo gem update --system`
+- Instalar dependencias: `sudo bundle install`
+- Para ejecutar utilizar el comando (To execute use the command): `bundle exec jekyll serve`
