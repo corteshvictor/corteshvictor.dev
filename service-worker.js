@@ -1,4 +1,4 @@
-const CACHE_NAME = "shell-v1.0.5";
+const CACHE_NAME = "shell-v1.0.6";
 const filesToCache = [
   "/",
   "./index.html",
