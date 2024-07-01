@@ -17,7 +17,6 @@
 - [x] Responsive Web Design
 - [x] Dark Mode
 - [x] Progressive Web Apps (PWA)
-- [x] Google Analytics
 - [ ] Translations to other languages? 🇱🇷
 
 
