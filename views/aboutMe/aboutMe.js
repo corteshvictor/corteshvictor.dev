@@ -21,12 +21,15 @@ const contentHome = `
         </div>
     </section>
     <p>
-        Soy de Colombia, de la ciudad de Cartagena de Indias, apasionado por el desarrollo web y videojuegos.
-        Tengo 12 años de experiencia laboral, pero ejerciendo como desarrollador web, tengo más de 5 años.
+        Soy de Colombia, de la ciudad de Cartagena de Indias, apasionado por el desarrollo web y videojuegos. 
+        Ingeniero de sistemas con experiencia de más de 15 años. Desarrollador de aplicaciones web, Infraestructura, redes, aplicaciones 
+        ERP (Dynamics GP, Exact MAX), análisis de datos y creación de reportes (BI). Excelentes conocimientos sobre 
+        JavaScript, TypeScript, HTML, CSS, React, Next.js, Node.js, Express.js, Fastify, Nest.js, SQL, NoSQL, AWS.
     </p>
     <p>
-        Me considero una persona con iniciativa, liderazgo, trabajo en equipo, muy responsable en mis decisiones y actuaciones.
-        Lenguajes y tecnologías que me gustan y que tengo excelentes conocimientos: HTML5, CSS3, JavaScript, React, Svelte, Node.
+        Profesional con iniciativa y liderazgo, responsable en todas mis actuaciones y con facilidad de aprendizaje rápido. Disfruto del
+        trabajo en equipo y poseo excelentes habilidades para gestionar relaciones interpersonales. Me considero recursivo, con una
+        formación familiar y académica basada en sólidos valores. Poseo una fuerte pasión por guiar y enseñar a otros.
     </p>
 `;
 

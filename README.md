@@ -19,7 +19,6 @@
 - [x] Progressive Web Apps (PWA)
 - [ ] Translations to other languages? 🇱🇷
 
-
 # Para ejecutar el proyecto.
 
 - Verifica la version de ruby que sea v3. `ruby -v`
