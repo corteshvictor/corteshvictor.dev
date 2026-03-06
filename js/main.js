@@ -44,9 +44,28 @@ darkMode.addEventListener("change", (event) => {
   if (!isDarkMode()) event.matches ? activateDarkMode() : activateLightMode();
 });
 
-router(window.location.hash);
-window.addEventListener("hashchange", () => {
-  router(window.location.hash);
+// Redirect old hash URLs to clean paths
+if (window.location.hash.startsWith("#/")) {
+  const path = window.location.hash.slice(1);
+  history.replaceState(null, "", path);
+}
+
+router(window.location.pathname);
+
+window.addEventListener("popstate", () => {
+  router(window.location.pathname);
+});
+
+document.addEventListener("click", (e) => {
+  const link = e.target.closest("a");
+  if (!link) return;
+  if (link.hostname !== window.location.hostname) return;
+  if (link.hasAttribute("target")) return;
+
+  const path = link.pathname;
+  e.preventDefault();
+  history.pushState(null, "", path);
+  router(path);
 });
 
 checkbox.addEventListener("change", () => {

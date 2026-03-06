@@ -27,40 +27,38 @@ const router = (route = '') => {
   switch (route) {
     case '':
     case '/':
-    case '#/':
-    case '#/home':
-    case '/index.html':
+    case '/home':
       removeActive();
       navHome.classList.add('main-nav__link--active');
       return content.appendChild(Home.home());
 
-    case '#/about':
+    case '/about':
       removeActive();
       navAboutMe.classList.add('main-nav__link--active');
       return content.appendChild(AboutMe.aboutMe());
 
-    case '#/tutorials':
+    case '/tutorials':
       removeActive();
       navTutorials.classList.add('main-nav__link--active');
       return content.appendChild(Tutorials.tutorials());
 
-    case '#/articles':
+    case '/articles':
       removeActive();
       navArticles.classList.add('main-nav__link--active');
       return content.appendChild(Articles.articles());
 
-    case '#/hobbies':
+    case '/hobbies':
       removeActive();
       navHobbies.classList.add('main-nav__link--active');
       return content.appendChild(Hobbies.hobbies());
 
-    case '#/remove-password':
+    case '/remove-password':
       return content.appendChild(Home.removePass());
 
-    case '#/modern-combat':
+    case '/modern-combat':
       return content.appendChild(Home.modernCombat());
 
-    case '#/intro-hybrids':
+    case '/intro-hybrids':
       return content.appendChild(Home.introHybrids());
 
     default:
