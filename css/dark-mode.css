@@ -8,7 +8,7 @@
   --main-nav-bg: #1a2634;
   --bg-global: #0d1219;
   --color-global: white;
-  --menu-icon: url("../assets/icons/menu-white.svg") center/cover no-repeat;
+  --menu-icon: url("/assets/icons/menu-white.svg") center/cover no-repeat;
   transition: 0.3s ease all;
   --topic-link-shadow: rgba(111, 113, 115, 0.4);
 }
@@ -23,7 +23,7 @@
   --main-nav-bg: #e6e9ed;
   --bg-global: white;
   --color-global: black;
-  --menu-icon: url("../assets/icons/menu-black.svg") center/cover no-repeat;
+  --menu-icon: url("/assets/icons/menu-black.svg") center/cover no-repeat;
   transition: 0.3s ease all;
   --topic-link-shadow: rgba(100, 110, 140, 0.4);
 }
@@ -39,7 +39,7 @@
     --main-nav-bg: #1a2634;
     --bg-global: #0d1219;
     --color-global: white;
-    --menu-icon: url("../assets/icons/menu-white.svg") center/cover no-repeat;
+    --menu-icon: url("/assets/icons/menu-white.svg") center/cover no-repeat;
     --topic-link-shadow: rgba(111, 113, 115, 0.4);
   }
 }

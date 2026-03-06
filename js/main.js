@@ -1,5 +1,18 @@
 import router from "./router.js";
 
+if ("serviceWorker" in navigator && import.meta.env.PROD) {
+  navigator.serviceWorker
+    .register("/service-worker.js")
+    .catch((err) => console.log("ServiceWorker registration failed: ", err));
+
+  let refreshing;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (refreshing) return;
+    refreshing = true;
+    window.location.reload();
+  });
+}
+
 const checkbox = document.querySelector("#dark-mode");
 const label = document.querySelector(".switch__label");
 const darkMode = window.matchMedia("(prefers-color-scheme: dark)");
@@ -7,7 +20,7 @@ const imgDevElement = document.querySelector("#img-dev");
 
 const isDarkMode = () => localStorage.getItem("dark-mode");
 const activateDarkMode = () => {
-  imgDevElement.setAttribute("src", "../assets/icons/dev-white.svg");
+  imgDevElement.setAttribute("src", "/assets/icons/dev-white.svg");
   checkbox.setAttribute("checked", true);
   document.body.classList.remove("light-mode");
   document.body.classList.add("dark-mode");
@@ -15,7 +28,7 @@ const activateDarkMode = () => {
   label.classList.add("switch__label--light");
 };
 const activateLightMode = () => {
-  imgDevElement.setAttribute("src", "../assets/icons/dev-black.svg");
+  imgDevElement.setAttribute("src", "/assets/icons/dev-black.svg");
   checkbox.removeAttribute("checked");
   document.body.classList.remove("dark-mode");
   document.body.classList.add("light-mode");

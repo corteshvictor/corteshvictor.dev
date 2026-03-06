@@ -31,7 +31,7 @@ const contentHome = `
                 class="global-article__img"
                 alt="Perfil de GitHub"
                 width="80"
-                src="assets/icons/github.svg"
+                src="/assets/icons/github.svg"
             />
             <p
                 class="global-article__text" 

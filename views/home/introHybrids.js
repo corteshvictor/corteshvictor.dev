@@ -34,7 +34,7 @@ const contentIntroHybrids = `
           <td>
             <img
               alt="logo react"
-              src="../../assets/icons/react.svg"
+              src="/assets/icons/react.svg"
               class="table--img"
             />
           </td>
@@ -48,21 +48,21 @@ const contentIntroHybrids = `
           <td>
             <img
               alt="logo polymer"
-              src="../../assets/icons/polymer.svg"
+              src="/assets/icons/polymer.svg"
               class="table--img"
             />
           </td>
           <td>
             <img
               alt="logo slim"
-              src="../../assets/icons/slim.png"
+              src="/assets/icons/slim.png"
               class="table--img"
             />
           </td>
           <td>
             <img
               alt="logo skatejs"
-              src="../../assets/icons/skatejs.png"
+              src="/assets/icons/skatejs.png"
               class="table--img"
             />
           </td>
