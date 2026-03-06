@@ -1,29 +1,37 @@
-## Website [https://corteshvictor.dev](https://corteshvictor.dev)
+# [corteshvictor.dev](https://corteshvictor.dev)
 
-# Blog Personal 📝
+Blog personal construido con HTML, CSS y JavaScript vanilla. Sin frameworks, sin dependencias de runtime.
 
-### Construí mi blog personal sencillo y clásico con HTML, CSS y JavaScript.
+## Tecnologías
 
----
+- **JavaScript ES6+** — SPA con router hash-based y arquitectura MVC
+- **CSS3** — Custom properties, BEM, responsive design, dark mode
+- **Vite** — Dev server con HMR y build de producción
+- **PWA** — Service Worker con cache-first strategy y manifest para instalación
 
-# Personal Blog 📝
+## Desarrollo
 
-### I built my simple and classic personal blog with HTML, CSS and JavaScript.
+```bash
+# Requisitos: Node.js >= 24
+nvm use
 
-## TODO ✅
+# Instalar dependencias
+npm install
 
-- [x] JavaScript Vanilla.
-- [x] Single Page Application (SPA)
+# Servidor de desarrollo
+npm run dev
+
+# Build de producción
+npm run build
+
+# Preview del build
+npm run preview
+```
+
+## Características
+
+- [x] JavaScript Vanilla (SPA)
 - [x] Responsive Web Design
-- [x] Dark Mode
-- [x] Progressive Web Apps (PWA)
-- [ ] Translations to other languages? 🇱🇷
-
-# Para ejecutar el proyecto.
-
-- Verifica la version de ruby que sea v3. `ruby -v`
-- Installar ruby en arm64. `brew install ruby`
-- Actualizar nuestro PATH. La forma más sencilla de hacerlo es seguir las instrucciones que nos da Homebrew: `echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc`
-- actualiza a la última versión de RubyGems: `sudo gem update --system`
-- Instalar dependencias: `sudo bundle install`
-- Para ejecutar utilizar el comando (To execute use the command): `bundle exec jekyll serve`
+- [x] Dark Mode (sistema + manual con localStorage)
+- [x] Progressive Web App (PWA)
+- [ ] Traducciones a otros idiomas
