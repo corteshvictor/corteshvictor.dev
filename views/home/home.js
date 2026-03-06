@@ -6,7 +6,7 @@ const contentHome = `
 <article class="global-article">
     <a
         class="global-article__link" 
-        href="#/intro-hybrids"
+        href="/intro-hybrids"
     >
         <img 
             class="global-article__img" 
@@ -24,7 +24,7 @@ const contentHome = `
 <article class="global-article">
     <a
         class="global-article__link" 
-        href="#/remove-password"
+        href="/remove-password"
     >
         <img 
             class="global-article__img"
@@ -42,7 +42,7 @@ const contentHome = `
 <article class="global-article">
     <a
         class="global-article__link" 
-        href="#/modern-combat"
+        href="/modern-combat"
     >
         <img 
             class="global-article__img"
