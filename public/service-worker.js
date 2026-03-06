@@ -1,4 +1,4 @@
-const CACHE_NAME = "shell-v1.2.0";
+const CACHE_NAME = "shell-v1.2.1";
 const filesToCache = [
   "/",
   "/index.html",
@@ -45,7 +45,9 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  if (event.request.mode === "navigate") {
+  const url = new URL(event.request.url);
+
+  if (event.request.mode === "navigate" && !url.pathname.includes(".")) {
     event.respondWith(
       caches
         .match("/index.html")
