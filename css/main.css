@@ -53,6 +53,9 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -363,7 +366,7 @@ footer {
 
 /*------------ MAIN STYLES ------------*/
 main {
-  min-height: calc(100vh - 250px);
+  flex: 1 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 16px;
