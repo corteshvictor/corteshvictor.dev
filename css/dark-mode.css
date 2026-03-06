@@ -1,45 +1,80 @@
 .dark-mode {
-  --header-bg-color: #1a2634;
-  --footer-bg-color: #1a2634;
-  --anchor-color: rgba(241, 240, 240, 0.7);
-  --box-shadow-color: rgba(112, 106, 106, 0.2);
-  --link-color: white;
-  --article-link-color: white;
-  --main-nav-bg: #1a2634;
-  --bg-global: #0d1219;
-  --color-global: white;
-  --menu-icon: url("/assets/icons/menu-white.svg") center/cover no-repeat;
-  transition: 0.3s ease all;
-  --topic-link-shadow: rgba(111, 113, 115, 0.4);
+  --canvas: #0d1219;
+  --surface: #1a2634;
+  --surface-raised: #222f3f;
+
+  --ink-primary: #e4e6ea;
+  --ink-secondary: #a8adb6;
+  --ink-tertiary: #6e7582;
+  --ink-muted: #4a5261;
+
+  --accent: #2db5b9;
+  --accent-hover: #25999c;
+
+  --border: rgba(130, 150, 190, 0.15);
+  --border-emphasis: rgba(130, 150, 190, 0.3);
+
+  --focus-ring: 0 0 0 2px rgba(45, 181, 185, 0.4);
+
+  --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(100, 110, 130, 0.2);
+  --card-shadow-hover: 0 2px 6px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(100, 110, 130, 0.25);
+
+  --icon-menu: url("/assets/icons/menu-white.svg") center/cover no-repeat;
+  --nav-bg: var(--surface);
+
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .light-mode {
-  --header-bg-color: #e6e9ed;
-  --footer-bg-color: #e6e9ed;
-  --anchor-color: rgba(0, 0, 0, 0.7);
-  --box-shadow-color: rgba(0, 0, 0, 0.2);
-  --link-color: black;
-  --article-link-color: blue;
-  --main-nav-bg: #e6e9ed;
-  --bg-global: white;
-  --color-global: black;
-  --menu-icon: url("/assets/icons/menu-black.svg") center/cover no-repeat;
-  transition: 0.3s ease all;
-  --topic-link-shadow: rgba(100, 110, 140, 0.4);
+  --canvas: #ffffff;
+  --surface: #f0ede8;
+  --surface-raised: #e8e4de;
+
+  --ink-primary: #1c1917;
+  --ink-secondary: #44403c;
+  --ink-tertiary: #78716c;
+  --ink-muted: #a8a29e;
+
+  --accent: #0d7377;
+  --accent-hover: #0a5c5f;
+
+  --border: rgba(140, 120, 100, 0.15);
+  --border-emphasis: rgba(140, 120, 100, 0.3);
+
+  --focus-ring: 0 0 0 2px rgba(13, 115, 119, 0.4);
+
+  --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.1);
+  --card-shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.16);
+
+  --icon-menu: url("/assets/icons/menu-black.svg") center/cover no-repeat;
+  --nav-bg: var(--surface);
+
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --header-bg-color: #1a2634;
-    --footer-bg-color: #1a2634;
-    --anchor-color: rgba(241, 240, 240, 0.7);
-    --box-shadow-color: rgba(112, 106, 106, 0.2);
-    --link-color: white;
-    --article-link-color: white;
-    --main-nav-bg: #1a2634;
-    --bg-global: #0d1219;
-    --color-global: white;
-    --menu-icon: url("/assets/icons/menu-white.svg") center/cover no-repeat;
-    --topic-link-shadow: rgba(111, 113, 115, 0.4);
+    --canvas: #0d1219;
+    --surface: #1a2634;
+    --surface-raised: #222f3f;
+
+    --ink-primary: #e4e6ea;
+    --ink-secondary: #a8adb6;
+    --ink-tertiary: #6e7582;
+    --ink-muted: #4a5261;
+
+    --accent: #2db5b9;
+    --accent-hover: #25999c;
+
+    --border: rgba(130, 150, 190, 0.15);
+    --border-emphasis: rgba(130, 150, 190, 0.3);
+
+    --focus-ring: 0 0 0 2px rgba(45, 181, 185, 0.4);
+
+    --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(100, 110, 130, 0.2);
+    --card-shadow-hover: 0 2px 6px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(100, 110, 130, 0.25);
+
+    --icon-menu: url("/assets/icons/menu-white.svg") center/cover no-repeat;
+    --nav-bg: var(--surface);
   }
 }
