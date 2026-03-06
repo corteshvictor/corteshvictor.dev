@@ -4,7 +4,7 @@ Blog personal construido con HTML, CSS y JavaScript vanilla. Sin frameworks, sin
 
 ## Tecnologías
 
-- **JavaScript ES6+** — SPA con router hash-based y arquitectura MVC
+- **JavaScript ES6+** — SPA con History API router y arquitectura MVC
 - **CSS3** — Custom properties, BEM, responsive design, dark mode
 - **Vite** — Dev server con HMR y build de producción
 - **PWA** — Service Worker con cache-first strategy y manifest para instalación

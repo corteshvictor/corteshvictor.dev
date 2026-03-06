@@ -10,7 +10,7 @@ npm run build    # Production build → dist/
 npm run preview  # Preview production build locally
 ```
 
-No tests, linter, or CI pipeline configured.
+Requires Node.js >= 24. No tests, linter, or CI pipeline configured.
 
 ## Architecture
 
@@ -18,16 +18,20 @@ Vanilla JavaScript SPA (no framework) built with Vite. Zero runtime dependencies
 
 ### MVC-like Pattern
 
-- **`js/main.js`** — Entry point. Registers Service Worker (prod only via `import.meta.env.PROD`), initializes dark mode, sets up hash-based router.
-- **`js/router.js`** — Hash router (`#/home`, `#/about`, `#/tutorials`, `#/articles`, `#/hobbies`). Imports all controllers, switches content in `#root` based on `window.location.hash`.
-- **`controllers/`** — Each feature folder (home/, aboutMe/, tutorials/, articles/, hobbies/) has an index.js that exports a function creating a DOM element from its corresponding view template. Some controllers add runtime behavior (e.g., `articles/articles.js` swaps images by screen size).
+- **`js/main.js`** — Entry point. Registers Service Worker (prod only via `import.meta.env.PROD`), initializes dark mode, sets up History API router with client-side navigation (intercepts `<a>` clicks, uses `pushState`/`popstate`). Includes backward-compat redirect from old `#/` hash URLs.
+- **`js/router.js`** — History API router using `window.location.pathname`. Routes: `/`, `/home`, `/about`, `/tutorials`, `/articles`, `/hobbies`, plus article sub-pages (`/remove-password`, `/modern-combat`, `/intro-hybrids`). Switches content in `#root` by calling controller functions.
+- **`controllers/`** — Each feature folder (home/, aboutMe/, tutorials/, articles/, hobbies/) has an `index.js` that exports a function creating a DOM element from its corresponding view template. Some controllers add runtime behavior (e.g., `articles/articles.js` swaps images by screen size). `controllers/index.js` is the barrel file re-exporting all controllers.
 - **`views/`** — Mirrors controllers structure. Each file exports an HTML template literal string. These are set as `innerHTML` on elements created by controllers.
+
+### Routing & Navigation
+
+Internal links must use same-origin `<a>` tags without `target` attribute — `main.js` intercepts clicks and calls `history.pushState()`. External links (different hostname or with `target` attribute) are not intercepted. When adding new routes: add the case to `router.js`, create a controller + view, and update navigation links.
 
 ### Static Assets & PWA
 
-- **`public/`** — Files served as-is by Vite (no processing): `service-worker.js`, `manifest.json`, `assets/icons/`, `assets/images/`.
+- **`public/`** — Files served as-is by Vite (no processing): `service-worker.js`, `manifest.json`, `sitemap.xml`, `assets/icons/`, `assets/images/`.
 - All asset references use absolute paths (`/assets/...`) so Vite serves them from `public/` without hashing.
-- Service Worker (`public/service-worker.js`) uses cache-first strategy. Bump `CACHE_NAME` version when updating cached resources.
+- Service Worker (`public/service-worker.js`) uses cache-first strategy with navigation requests always returning `/index.html` (SPA fallback). Bump `CACHE_NAME` version when updating cached resources.
 
 ### CSS
 
@@ -42,4 +46,4 @@ Vanilla JavaScript SPA (no framework) built with Vite. Zero runtime dependencies
 
 ## Deployment
 
-Deployed on Vercel. Framework preset: **Vite**. Build output: `dist/`. Vercel auto-detects configuration from `package.json`.
+Deployed on Vercel. Framework preset: **Vite**. Build output: `dist/`. `vercel.json` has a catch-all rewrite (`/(.*) → /index.html`) for SPA client-side routing support.
