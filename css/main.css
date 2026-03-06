@@ -148,18 +148,16 @@ h2, h3, h4 {
 }
 
 .youtube-follow {
-  background: #cc3333;
-  opacity: 0.8;
+  background: #b52d2d;
 }
 
 .twitter-follow {
-  background: #1a8cd8;
-  opacity: 0.8;
+  background: #1578b8;
 }
 
 .twitter-follow:hover,
 .youtube-follow:hover {
-  opacity: 1;
+  filter: brightness(1.15);
 }
 
 .twitter-follow:focus-visible,
@@ -395,6 +393,11 @@ main {
 .external-videos__link:hover {
   color: var(--ink-primary);
   background-color: var(--surface);
+}
+
+.external-videos__text {
+  font-weight: 600;
+  font-size: 0.9375rem;
 }
 
 .external-videos__link:focus-visible {
