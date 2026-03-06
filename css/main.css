@@ -10,10 +10,10 @@
   --article-link-color: blue;
   --bg-global: white;
   --color-global: black;
-  --light-mode: url("../assets/icons/wb_sunny.svg") center/cover no-repeat;
-  --dark-mode: url("../assets/icons/nights_stay.svg") center/cover no-repeat;
+  --light-mode: url("/assets/icons/wb_sunny.svg") center/cover no-repeat;
+  --dark-mode: url("/assets/icons/nights_stay.svg") center/cover no-repeat;
   --bg-img-dev: none;
-  --menu-icon: url("../assets/icons/menu-black.svg") center/cover no-repeat;
+  --menu-icon: url("/assets/icons/menu-black.svg") center/cover no-repeat;
   --width-img: 80px;
   --padding-table: 10px;
   --topic-link-shadow: rgba(100, 110, 140, 0.4);
@@ -124,12 +124,12 @@ a {
 }
 
 .youtube-follow__icon {
-  background: url("../assets/icons/yt-subscribe.svg") transparent 0 0 no-repeat;
+  background: url("/assets/icons/yt-subscribe.svg") transparent 0 0 no-repeat;
   margin: 0px 2px;
 }
 
 .twitter-follow__icon {
-  background: url("../assets/icons/twitter-white.svg") transparent 0 0 no-repeat;
+  background: url("/assets/icons/twitter-white.svg") transparent 0 0 no-repeat;
   margin: 0px 2px;
 }
 

@@ -4,14 +4,14 @@ const contentHome = `
         <div class="profile__img-content">
             <img
                 class="profile__img profile__img--size"
-                src="../../assets/images/profile-photo.png"
+                src="/assets/images/profile-photo.png"
                 alt="Foto de perfil"
             />
         </div>
         <div class="profile__info-content">
             <img
                 class="profile-info__img" 
-                src="../../assets/images/web-developer.svg" 
+                src="/assets/images/web-developer.svg"
                 alt="Web Developer"
             />
             <h4 class="profile__name">Desarrollador Web</h4>

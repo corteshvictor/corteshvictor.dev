@@ -9,14 +9,14 @@ const Articles = () => {
   const isMobileDevice = window.matchMedia("(max-width: 500px)");
 
   function mobileMode() {
-    imgHybridsElement.setAttribute("src", "../../assets/icons/hybrids.svg");
+    imgHybridsElement.setAttribute("src", "/assets/icons/hybrids.svg");
     imgHybridsElement.setAttribute("width", "120");
   }
 
   function desktopMode() {
     imgHybridsElement.setAttribute(
       "src",
-      "../../assets/images/hybrids-full-logo.svg"
+      "/assets/images/hybrids-full-logo.svg"
     );
     imgHybridsElement.setAttribute("width", "200");
   }

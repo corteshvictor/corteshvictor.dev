@@ -10,7 +10,7 @@ const contentHome = `
     <picture class="topic__picture">
       <img
         class="topic__img"
-        src="../../assets/icons/hybrids.svg" 
+        src="/assets/icons/hybrids.svg"
         alt="logo hybrids" 
       />
     </picture>
@@ -25,7 +25,7 @@ const contentHome = `
     <picture class="topic__picture">
       <img 
         class="topic__img"
-        src="../../assets/icons/modern-combat-v.webp" 
+        src="/assets/icons/modern-combat-v.webp"
         alt="logo modern combat 5"
       />
     </picture>
@@ -40,7 +40,7 @@ const contentHome = `
     <picture class="topic__picture">
       <img 
         class="topic__img"
-        src="../../assets/icons/microsoft-office-excel.svg"
+        src="/assets/icons/microsoft-office-excel.svg"
         alt="logo microsoft office excel"
       />
     </picture>
@@ -55,7 +55,7 @@ const contentHome = `
     <picture class="topic__picture">
       <img 
         class="topic__img"
-        src="../../assets/icons/ps4-remote-play.webp"
+        src="/assets/icons/ps4-remote-play.webp"
         alt="logo ps4 remote play"
       />
     </picture>
