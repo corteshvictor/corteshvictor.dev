@@ -1,7 +1,8 @@
-const CACHE_NAME = "shell-v1.2.1";
+const CACHE_NAME = "shell-v1.2.2";
 const filesToCache = [
   "/",
   "/index.html",
+  "/.well-known/security.txt",
   "/manifest.json",
   "/js/index.js",
   "/css/index.css",
