@@ -12,6 +12,6 @@
     "node": ">=24"
   },
   "devDependencies": {
-    "vite": "7.3.2"
+    "vite": "8.1.2"
   }
 }
