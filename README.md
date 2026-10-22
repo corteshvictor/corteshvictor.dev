@@ -1,37 +1,37 @@
 # [corteshvictor.dev](https://corteshvictor.dev)
 
-Blog personal construido con HTML, CSS y JavaScript vanilla. Sin frameworks, sin dependencias de runtime.
+Personal blog built with vanilla HTML, CSS and JavaScript. No frameworks, no runtime dependencies.
 
-## Tecnologías
+## Tech stack
 
-- **JavaScript ES6+** — SPA con History API router y arquitectura MVC
+- **JavaScript ES6+** — SPA with a History API router and MVC architecture
 - **CSS3** — Custom properties, BEM, responsive design, dark mode
-- **Vite** — Dev server con HMR y build de producción
-- **PWA** — Service Worker con cache-first strategy y manifest para instalación
+- **Vite** — Dev server with HMR and production build
+- **PWA** — Service Worker with a cache-first strategy and a manifest for installation
 
-## Desarrollo
+## Development
 
 ```bash
-# Requisitos: Node.js >= 24
+# Requirements: Node.js >= 24
 nvm use
 
-# Instalar dependencias
-npm install
+# Install dependencies
+pnpm install
 
-# Servidor de desarrollo
-npm run dev
+# Development server
+pnpm dev
 
-# Build de producción
-npm run build
+# Production build
+pnpm build
 
-# Preview del build
-npm run preview
+# Preview the build
+pnpm preview
 ```
 
-## Características
+## Features
 
-- [x] JavaScript Vanilla (SPA)
+- [x] Vanilla JavaScript (SPA)
 - [x] Responsive Web Design
-- [x] Dark Mode (sistema + manual con localStorage)
+- [x] Dark Mode (system + manual with localStorage)
 - [x] Progressive Web App (PWA)
-- [ ] Traducciones a otros idiomas
+- [ ] Translations to other languages

@@ -1,0 +1,5 @@
+# Single-package repo: `packages` keeps older pnpm versions (e.g. pnpm 9 on Vercel) from rejecting this file.
+packages:
+  - .
+saveExact: true
+ignoreScripts: true
