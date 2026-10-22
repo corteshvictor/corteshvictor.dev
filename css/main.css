@@ -1,33 +1,33 @@
 /*------------ DESIGN TOKENS ------------*/
 :root {
-  /* Superficies — blanco limpio con superficies calidas */
+  /* Surfaces — clean white with warm surfaces */
   --canvas: #ffffff;
   --surface: #f0ede8;
   --surface-raised: #e8e4de;
 
-  /* Tinta — jerarquia de 4 niveles, oscura y legible */
+  /* Ink — 4-level hierarchy, dark and readable */
   --ink-primary: #1c1917;
   --ink-secondary: #44403c;
   --ink-tertiary: #78716c;
   --ink-muted: #a8a29e;
 
-  /* Acento — teal caribeno */
+  /* Accent — Caribbean teal */
   --accent: #0d7377;
   --accent-hover: #0a5c5f;
 
-  /* Bordes — calidos, baja opacidad */
+  /* Borders — warm, low opacity */
   --border: rgba(140, 120, 100, 0.15);
   --border-emphasis: rgba(140, 120, 100, 0.3);
 
   /* Focus */
   --focus-ring: 0 0 0 2px rgba(13, 115, 119, 0.4);
 
-  /* Radio */
+  /* Radius */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
 
-  /* Iconos de tema */
+  /* Theme icons */
   --icon-light: url("/assets/icons/wb_sunny.svg") center/cover no-repeat;
   --icon-dark: url("/assets/icons/nights_stay.svg") center/cover no-repeat;
   --icon-menu: url("/assets/icons/menu-black.svg") center/cover no-repeat;
